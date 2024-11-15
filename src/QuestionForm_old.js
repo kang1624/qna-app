@@ -15,23 +15,6 @@ function QuestionForm() {
   const [question, setQuestion] = useState('');
   const [showPopup, setShowPopup] = useState(false);
 
-  const CustomHeader = ({ text }) => (
-    <header
-      style={{
-        fontSize: '24px',
-        fontWeight: 'bold',
-        color: '#1491d4',
-        textShadow: '0px 0px 3px #4cb4ec, 0px 0px 12px rgba(0, 229, 255, 0.5)',
-        fontFamily: 'Roboto Mono, monospace',
-        textAlign: 'left',
-        margin: 0,
-        marginBottom: '30px',
-      }}
-    >
-      {text}
-    </header>
-  );
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -50,8 +33,7 @@ function QuestionForm() {
   return (
     <Container disableGutters maxWidth={false} className="full-screen-container">
       <Paper elevation={3} className="form-paper">
-      <CustomHeader text="งานประชุมวิชาการด้าน AI" />
-        <Typography variant="h6" align="center" gutterBottom className="form-title">
+        <Typography variant="h5" align="center" gutterBottom className="form-title">
           ส่งคำถามของคุณ
         </Typography>
         <form onSubmit={handleSubmit} className="question-form">

@@ -1,12 +1,13 @@
 /* กำหนดพื้นหลังสีเข้มพร้อมไล่สีให้ดูทันสมัย */
 .list-container {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px;
-    background: linear-gradient(145deg, #0a0a0a, #1b1b1b);
-    border-radius: 16px;
-    box-shadow: 0px 10px 30px rgba(0, 180, 216, 0.4);
-    color: #e0e0e0;
-}
+    background: linear-gradient(145deg, #000000, #148ce1); /* พื้นหลังแบบไล่สี */
+    border-radius: 16px; /* มุมโค้งมน */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* เงา */
+    min-height: 100vh; /* ครอบคลุมความสูงหน้าจอ */
+    box-sizing: border-box; /* รวม padding ในขนาด container */
+  }
 
 .title {
     color: #00e5ff;
