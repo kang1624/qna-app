@@ -19,7 +19,7 @@ function QuestionList() {
 
     const intervalId = setInterval(() => {
       fetchQuestions();
-    }, 5000);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);
